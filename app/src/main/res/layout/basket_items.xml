@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bucket_image"/>
+
+        <TextView
+            android:id="@+id/bucket_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bucket_image"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bucket_name"
+            android:text="Price"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/bucket_price"/>
+
+        <TextView
+            android:id="@+id/bucket_count"
+            android:layout_below="@+id/bucket_price"
+            android:layout_width="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="count"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bucket_total"
+            android:layout_below="@+id/bucket_count"
+            android:text="total"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
