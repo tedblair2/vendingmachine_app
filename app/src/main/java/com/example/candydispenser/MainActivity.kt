@@ -63,7 +63,8 @@ class MainActivity : AppCompatActivity() {
         }
         var total=0
         //getTotal(0)
-        binding.balance.text="Ksh.0"
+        //binding.balance.text="Ksh.0"
+        binding.balance.text="Ksh.${total.toString()}"
         binding.finalBalance.text="Ksh.0"
         binding.total.text="Ksh.0"
         binding.clear.setOnClickListener {
